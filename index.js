@@ -12,7 +12,21 @@ const tutorials = [
 ];
 
 const titleCased = tutorials.map((tutorial) => {
-  return {tutorials: tutorial.toLowerCase()};
+  const lowerCased = tutorial.toLowerCase(); 
+  const strSplit = lowerCased.split(' ');
+
+  const toUpper = strSplit.map((word) => {
+    return word;
+  })
+  return toUpper;
 });
 
 console.log(titleCased);
+
+// function splitTutorials() {
+//   for (let i = 0; i < tutorials.length; i++) {
+//     console.log(tutorials[i]); 
+//   }
+// } 
+
+// splitTutorials();
