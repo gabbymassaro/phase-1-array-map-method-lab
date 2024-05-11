@@ -15,10 +15,15 @@ const titleCased = tutorials.map((tutorial) => {
   const lowerCased = tutorial.toLowerCase(); 
   const strSplit = lowerCased.split(' ');
 
-  const toUpper = strSplit.map((word) => {
-    return word;
-  })
-  return toUpper;
+  const words = strSplit.map((word) => {
+    return word[0].toUpperCase();
+  }) 
+  return words; 
+
+
+
+
+
 });
 
 console.log(titleCased);
